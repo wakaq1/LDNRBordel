@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Страница с кнопками</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #ccc;
+        }
+    </style>
 </head>
 <body>
-    <div id = "main">
-        <h1>Online Shop</h1>
-        <p>Test</p>
-        <button id = "buy">Buy</button>
+    <div class="button-container">
+        <button class="button" onclick="location.href='https://example.com/page1'">Кнопка 1</button>
+        <button class="button" onclick="location.href='https://example.com/page2'">Кнопка 2</button>
+        <button class="button" onclick="location.href='https://example.com/page3'">Кнопка 3</button>
     </div>
-    
 </body>
 </html>
